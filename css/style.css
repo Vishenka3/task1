@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  color: #000000;
+  letter-spacing: 1px; }
+
+#container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto; }
+  #container header {
+    display: flex;
+    color: #ffffff;
+    background: #082740; }
+    #container header #info {
+      padding: 100px;
+      flex-direction: column;
+      justify-content: space-around;
+      display: flex; }
+      #container header #info section {
+        padding-top: 200px; }
+  #container footer {
+    background: #e6f0ef;
+    clear: both; }
+
+/*# sourceMappingURL=style.css.map */
