@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="resources/icon.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/wrapper.css">
     <title>Profile</title>
 </head>
 <body>
     <div id="container">
         <header>
-            <img src="resources/photo.jpg">
+            <div id="photo"></div>
             <div id="info">
                 <h3 id="profession">Будущий фронт-енд-разработчик</h3>
                 <h1 id="my_name">Давыдов Алексей</h1>
@@ -24,14 +25,118 @@
                 </section>
             </div>
         </header>
+
+        <h1>Ожидания от ШРИ</h1>
+
         <section id="expectations">
-            <h2>Ожидания от ШРИ</h2>
+            <div class="wide">
+                <h2>Свобода</h2>
+                <p>ТекстТекст ТекстТекстТекстТекст. ТекстТекстТекстТекст Текст. ТекстТекстТекстТекст. ТекстТекстТекстТекст ТекстТекст.</p>
+            </div>
+            <div class="slim">
+                <h2>Свобода</h2>
+                <p>ТекстТекст ТекстТекстТекстТекст. ТекстТекстТекстТекстТекст. ТекстТекстТекстТекст. ТекстТекстТекстТекстТекстТекст.</p>
+            </div>
+            <div class="slim">
+                <h2>Свобода</h2>
+                <p>ТекстТекст ТекстТекстТекстТекст. ТекстТекстТекстТекст Текст. ТекстТекстТекстТекст. ТекстТекстТекстТекст ТекстТекст.</p>
+            </div>
+            <div class="wide">
+                <h2>Свобода</h2>
+                <p>ТекстТекст ТекстТекстТекстТекст. ТекстТекстТекстТекст Текст. ТекстТекстТекстТекст. ТекстТекстТекстТекст ТекстТекст.</p>
+            </div>
         </section>
+
+        <h1>Мои работы</h1>
+
         <section id="examples">
-            <h2>Мои работы</h2>
+            <div class="example">
+                <div class="wrapper">
+                    <input type="radio" name="point" id="slide1" checked>
+                    <input type="radio" name="point" id="slide2">
+                    <input type="radio" name="point" id="slide3">
+                    <div class="slider">
+                        <div class="slides slide1"></div>
+                        <div class="slides slide2"></div>
+                        <div class="slides slide3"></div>
+                    </div>
+                    <div class="controls">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                    </div>
+                </div>
+                <div class="example_info">
+                    <h2>Магазин HyperPC</h2>
+                    <a href="#">hyperpc.com</a>
+                    <p>ТекстТекстТекстТ екстТекстТекст. ТекстТекстТекстТекст Текст. ТекстТекстТекстТекст. ТекстТекстТекстТекст ТекстТекст.</p>
+                </div>
+            </div>
+
+            <div class="example reverse">
+                <div class="wrapper">
+                    <input type="radio" name="point2" id="slide4">
+                    <input type="radio" name="point2" id="slide5">
+                    <input type="radio" name="point2" id="slide6" checked>
+                    <div class="controls">
+                        <label for="slide4"></label>
+                        <label for="slide5"></label>
+                        <label for="slide6"></label>
+                    </div>
+                    <div class="slider2">
+                        <div class="slides slide4"></div>
+                        <div class="slides slide5"></div>
+                        <div class="slides slide6"></div>
+                    </div>
+                </div>
+                <div class="example_info">
+                    <h2>Магазин HyperPC</h2>
+                    <a href="#">hyperpc.com</a>
+                    <p>ТекстТекстТекстТ екстТекстТекст. ТекстТекстТекстТекст Текст. ТекстТекстТекстТекст. ТекстТекстТекстТекст ТекстТекст.</p>
+                </div>
+            </div>
+
+            <div class="example">
+                <div class="wrapper">
+                    <input type="radio" name="point3" id="slide7">
+                    <input type="radio" name="point3" id="slide8" checked>
+                    <input type="radio" name="point3" id="slide9">
+                    <div class="slider3">
+                        <div class="slides slide7"></div>
+                        <div class="slides slide8"></div>
+                        <div class="slides slide9"></div>
+                    </div>
+                    <div class="controls">
+                        <label for="slide7"></label>
+                        <label for="slide8"></label>
+                        <label for="slide9"></label>
+                    </div>
+                </div>
+                <div class="example_info">
+                    <h2>Магазин HyperPC</h2>
+                    <a href="#">hyperpc.com</a>
+                    <p>ТекстТекстТекстТ екстТекстТекст. ТекстТекстТекстТекст Текст. ТекстТекстТекстТекст. ТекстТекстТекстТекст ТекстТекст.</p>
+                </div>
+            </div>
+
         </section>
-        <footer>
-            <h2>Контактная информация</h2>
+
+
+        <footer class="footerh">
+            <h1>Контактная информация</h1>
+            <div id="contacts">
+                <section id="about">
+                    <p></p>
+                    <div id="links">
+
+                    </div>
+                </section>
+                <section id="communication">
+                    <form>
+
+                    </form>
+                </section>
+            </div>
         </footer>
     </div>
 </body>

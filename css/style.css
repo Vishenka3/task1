@@ -3,10 +3,28 @@
   padding: 0; }
 
 body {
-  font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 1.3em;
   color: #000000;
   letter-spacing: 1px; }
+  body h1 {
+    padding: 15vh 0 5vh 0;
+    width: 70vw;
+    margin: auto;
+    font-weight: 900;
+    font-family: 'MS Sans Serif', sans-serif; }
+  body h2 {
+    font-family: 'MS Sans Serif', sans-serif; }
+  body h3 {
+    font-family: 'MS Sans Serif', sans-serif; }
+  body a {
+    text-decoration: none; }
+    body a:link {
+      color: #bf371f; }
+    body a:visited {
+      color: #942c18; }
+    body a:hover {
+      text-shadow: 0 0 2px rgba(148, 6, 212, 0.5); }
 
 #container {
   display: flex;
@@ -16,16 +34,83 @@ body {
   #container header {
     display: flex;
     color: #ffffff;
-    background: #082740; }
+    background: #bf371f;
+    height: 90vh; }
+    #container header #photo {
+      min-width: 35vw;
+      background-image: url("../resources/photo.jpg");
+      background-size: cover;
+      background-origin: content-box;
+      background-attachment: local; }
     #container header #info {
-      padding: 100px;
+      padding: 4% 7% 0 10%;
       flex-direction: column;
-      justify-content: space-around;
+      line-height: 2.3em;
       display: flex; }
       #container header #info section {
-        padding-top: 200px; }
+        font-family: 'Times New Roman', sans-serif;
+        font-weight: 100;
+        padding-top: 15vw;
+        line-height: 1.3em; }
+  #container #expectations {
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/ }
+    #container #expectations .wide {
+      width: 60%; }
+    #container #expectations .slim {
+      width: 30%; }
+    #container #expectations div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #e7f0ee;
+      border-radius: 0.8vh;
+      margin: 10px;
+      transition: all 0.2s ease-in-out; }
+      #container #expectations div h2 {
+        padding: 20px; }
+      #container #expectations div p {
+        padding: 20px;
+        font-size: 0.8em;
+        word-wrap: break-word; }
+      #container #expectations div:hover {
+        transform: scale(1.1);
+        /*color: #33034c;*/ }
+  #container #examples {
+    width: 70vw;
+    margin: 0 auto; }
+    #container #examples .example {
+      height: 50vh;
+      max-height: 50vh;
+      padding-bottom: 20vh;
+      display: flex;
+      justify-content: space-between; }
+      #container #examples .example .example_info {
+        display: flex;
+        flex-direction: column;
+        /*justify-content: space-between;*/
+        margin-left: 5vw;
+        font-size: 0.9em;
+        position: relative; }
+        #container #examples .example .example_info p {
+          position: absolute;
+          bottom: 0;
+          vertical-align: bottom;
+          font-size: 0.9em; }
+    #container #examples .reverse {
+      flex-direction: row-reverse; }
+      #container #examples .reverse .example_info {
+        margin-left: 0;
+        margin-right: 5vw; }
+      #container #examples .reverse .wrapper .controls {
+        width: 10px;
+        left: -40px; }
   #container footer {
     background: #e6f0ef;
-    clear: both; }
+    clear: both;
+    /*padding: 5vw 15vw 5vw 15vw;*/ }
 
 /*# sourceMappingURL=style.css.map */
