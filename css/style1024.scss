@@ -8,11 +8,17 @@ body {
   color: #000000;
   letter-spacing: 1px;
   h1{
+    /*padding: 15vh 0 5vh 0;*/
+    /*margin:auto;*/
     font-weight: 900;
     font-family: 'MS Sans Serif', sans-serif;
   }
-  h2{  font-family: 'MS Sans Serif', sans-serif;  }
-  h3{  font-family: 'MS Sans Serif', sans-serif;  }
+  h2{
+    font-family: 'MS Sans Serif', sans-serif;
+  }
+  h3{
+    font-family: 'MS Sans Serif', sans-serif;
+  }
   a{
     text-decoration: none;
     &:link{  color: #dd3e18;  }
@@ -23,7 +29,7 @@ body {
 #container {
   h1:not(.exception){
     padding: 15vh 0 5vh 0;
-    width: 70vw;
+    width: 90vw;
     margin: auto;
   }
   display: flex;
@@ -39,18 +45,18 @@ body {
     #photo{
       min-width: 35vw;
       background-image: url("../resources/photo2.jpg");
-      background-size: 71em;
+      background-size: cover;
       background-origin: content-box;
-      background-position: -492px;
+      background-position: -312px;
       background-attachment: local;
     }
     #info{
-      padding: 10% 7% 0 10%;
+      padding: 4% 7% 0 10%;
       flex-direction: column;
       line-height: 2.3em;
       display: flex;
       section{
-        width: 50vw;
+        width: 45vw;
         font-family: 'Times New Roman', sans-serif;
         font-weight: 100;
         padding-top: 15vw;
@@ -60,17 +66,12 @@ body {
   }
 
   #expectations{
-    width: 70vw;
+    width: 90vw;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    /*justify-content: space-between;*/
-    .wide{
-      width: 60%;
-    }
-    .slim{
-      width: 30%;
-    }
+    .wide{  width: 60%;  }
+    .slim{  width: 35%;  }
     div{
       display: flex;
       flex-direction: column;
@@ -85,15 +86,15 @@ body {
         font-size: 0.8em;
         word-wrap: break-word;
       }
-      &:hover{  transform: scale(1.1);  }
+      &:hover{  transform: scale(1.05);  }
     }
   }
 
   #examples{
-    width: 70vw;
+    width: 90vw;
     margin: 0 auto;
     .example{
-      height: 50vh;
+      height: 43vh;
       max-height: 50vh;
       padding-bottom: 20vh;
       display: flex;
@@ -101,7 +102,6 @@ body {
       .example_info{
         display: flex;
         flex-direction: column;
-        /*justify-content: space-between;*/
         margin-left: 5vw;
         font-size: 0.9em;
         position: relative;
@@ -128,28 +128,25 @@ body {
 
   footer {
     background: #e6f0ef;
-    h1{
-      padding-top: 10vh;
-    }
+    h1{  padding-top: 10vh;  }
     #contacts{
       display: flex;
-      width: 70vw;
+      width: 90vw;
       margin: 0 auto;
       margin-bottom: 15vh;
       #about {
         font-size: 0.8em;
-        width: 30%;
+        width: 40%;
         p{  margin-bottom: 2vh;  }
         #intro{  margin-bottom: 5vh;  }
         ul{width: 25%;}
         li {
           list-style-type: none;
-          line-height: 1.5em;
+          line-height: 1.3em;
           a {
-            width: 20%;
             margin-bottom: 1vh;
             display: block;
-            p{  margin: -2.8vh 0 0 3vw;  }
+            p{  margin: -3.4vh 0 0 3vw;  }
           }
           img {  padding-right: 5px;  }
         }

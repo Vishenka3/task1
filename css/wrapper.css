@@ -1,5 +1,5 @@
 .wrapper {
-    height: 50vh;
+    height: 42.4vh;
     margin-bottom: 50px;
     position: relative;
     width: 45vw;
@@ -40,17 +40,17 @@
     transition: transform ease-in-out .5s, opacity ease-in-out .5s;
 }
 
-.slide1 { background-image: url(http://habrastorage.org/files/3f2/628/bd5/3f2628bd58c8452db516195cb0c9bfc9.jpg); }
-.slide2 { background-image: url(http://habrastorage.org/files/3e1/95d/c7f/3e195dc7f5a64469807f49a14f97ba0e.jpg); }
-.slide3 { background-image: url(http://habrastorage.org/files/663/6b1/d4f/6636b1d4f8e643d29eab8c192fc1cea3.jpg); }
+.slide1 { background-image: url(http://habrastorage.org/files/3f2/628/bd5/3f2628bd58c8452db516195cb0c9bfc9.jpg);background-repeat: no-repeat;background-size: cover; }
+.slide2 { background-image: url(http://habrastorage.org/files/3e1/95d/c7f/3e195dc7f5a64469807f49a14f97ba0e.jpg);background-repeat: no-repeat;background-size: cover; }
+.slide3 { background-image: url(http://habrastorage.org/files/663/6b1/d4f/6636b1d4f8e643d29eab8c192fc1cea3.jpg);background-repeat: no-repeat;background-size: cover; }
 
-.slide4 { background-image: url(http://habrastorage.org/files/3f2/628/bd5/3f2628bd58c8452db516195cb0c9bfc9.jpg); }
-.slide5 { background-image: url(http://habrastorage.org/files/3e1/95d/c7f/3e195dc7f5a64469807f49a14f97ba0e.jpg); }
-.slide6 { background-image: url(http://habrastorage.org/files/663/6b1/d4f/6636b1d4f8e643d29eab8c192fc1cea3.jpg); }
+.slide4 { background-image: url(http://habrastorage.org/files/3f2/628/bd5/3f2628bd58c8452db516195cb0c9bfc9.jpg);background-repeat: no-repeat;background-size: cover; }
+.slide5 { background-image: url(http://habrastorage.org/files/3e1/95d/c7f/3e195dc7f5a64469807f49a14f97ba0e.jpg);background-repeat: no-repeat;background-size: cover; }
+.slide6 { background-image: url(http://habrastorage.org/files/663/6b1/d4f/6636b1d4f8e643d29eab8c192fc1cea3.jpg);background-repeat: no-repeat;background-size: cover; }
 
-.slide7 { background-image: url(http://habrastorage.org/files/3f2/628/bd5/3f2628bd58c8452db516195cb0c9bfc9.jpg); }
-.slide8 { background-image: url(http://habrastorage.org/files/3e1/95d/c7f/3e195dc7f5a64469807f49a14f97ba0e.jpg); }
-.slide9 { background-image: url(http://habrastorage.org/files/663/6b1/d4f/6636b1d4f8e643d29eab8c192fc1cea3.jpg); }
+.slide7 { background-image: url(http://habrastorage.org/files/3f2/628/bd5/3f2628bd58c8452db516195cb0c9bfc9.jpg);background-repeat: no-repeat;background-size: cover; }
+.slide8 { background-image: url(http://habrastorage.org/files/3e1/95d/c7f/3e195dc7f5a64469807f49a14f97ba0e.jpg);background-repeat: no-repeat;background-size: cover; }
+.slide9 { background-image: url(http://habrastorage.org/files/663/6b1/d4f/6636b1d4f8e643d29eab8c192fc1cea3.jpg);background-repeat: no-repeat;background-size: cover; }
 
 #slide1:checked ~ .slider > .slide1,
 #slide2:checked ~ .slider > .slide2,
@@ -77,7 +77,7 @@
 }
 
 .wrapper label {
-    background-color: #bf371f;
+    background-color: #dd3e18;
     cursor: pointer;
     display: inline-block;
     height: 9px;
@@ -101,15 +101,13 @@
     background-color: #000000;
 }
 
-/*.wrapper label:after {
-    border: 2px solid #bf371f;
-    !*background-color: #9406d4;*!
-    content: " ";
-    display: block;
-    height: 12px;
-    left: -4px;
-    position: absolute;
-    top: -4px;
-    width: 12px;
-    border-radius: 50%;
-}*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .wrapper .controls {
+        top: 100%;
+        left: 35%;
+        position: absolute;
+    }
+    .wrapper .controls .reverse {
+
+    }
+}

@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="resources/icon.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/wrapper.css">
+    <link rel="stylesheet" media="screen and (min-width: 1440px)" href="css/style.css"/>
+    <link rel="stylesheet" media="screen and (min-width: 1024px) and (max-width: 1439px)" href="css/style1024.css"/>
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1023px)" href="css/style768.css"/>
     <title>Profile</title>
 </head>
 <body>
@@ -14,14 +17,12 @@
             <div id="photo"></div>
             <div id="info">
                 <h3 id="profession">Будущий фронт-енд-разработчик</h3>
-                <h1 id="my_name">Давыдов Алексей</h1>
+                <h1 class="exception" id="my_name">Давыдов Алексей</h1>
                 <section id="introdution">
                     Существуют две основные трактовки понятия «текст»:
                     «имманентная» (расширенная, философски нагруженная) и «репрезентативная» (более частная).
                     Имманентный подход подразумевает отношение к тексту как к автономной реальности,
                     нацеленность на выявление его внутренней структуры.
-                    Репрезентативный — рассмотрение текста как особой формы представления знаний
-                    о внешней тексту действительности.
                 </section>
             </div>
         </header>
@@ -126,14 +127,39 @@
             <h1>Контактная информация</h1>
             <div id="contacts">
                 <section id="about">
-                    <p></p>
+                    <p id="intro">ТекстТекстТекстТекст Текст. ТекстТекстТекстТекст. ТекстТекстТекстТекст ТекстТекст.</p>
                     <div id="links">
-
+                        <p id="unnes">Ссылки на мои соцсети:</p>
+                        <ul>
+                            <li><a href="https://github.com/Vishenka3"><img src="resources/social/github.png" width="20" height="20" border="0" alt="Github"><p>Github</p></a></li>
+                            <li><a href="https://www.facebook.com/vishelinka"><img src="resources/social/facebook.png" width="20" height="20" border="0" alt="Facebook"><p>Facebook</p></a></li>
+                            <li><a href="https://twitter.com/Vishenka_alex"><img src="resources/social/twitter.png" width="20" height="20" border="0" alt="Twitter"><p>Twitter</p></a></li>
+                            <li><a href="https://vk.com/vishenka3"><img src="resources/social/VK.png" width="20" height="20" border="0" alt="VK"><p>VK</p></a></li>
+                            <li><a href="https://t.me/EROHKIN"><img src="resources/social/telegram.png" width="20" height="20" border="0" alt="Telegram"><p>Telegram</p></a></li>
+                        </ul>
                     </div>
                 </section>
                 <section id="communication">
-                    <form>
-
+                    <form class="go-bottom on-focus clearfix" action="#" autocomplete="on"  target="_self">
+                        <div>
+                            <input type="text" id="login" name="login" maxlength="32" required>
+                            <label for="login">Имя</label>
+                        </div>
+                        <div>
+                            <input type="email" id="email" required>
+                            <label for="email">Почтовый ящик </label>
+                        </div>
+                        <div>
+                            <textarea id="textarea" rows="10" cols="22"></textarea>
+                            <label for="textarea">Сообщение </label>
+                        </div>
+                        <!--<input type="file" name="myFile">-->
+                        <div id="fileform">
+                            <div class="selectbutton"></div>
+                            <div id="chosen">Прикрепить ТЗ</div>
+                            <input id="upload" type="file" name="upload" onchange="var ras = document.getElementById('chosen');ras.innerHTML = 'Выбранный файл: ' + this.files[0].name;"/>
+                        </div>
+                        <button type="submit" id="submit" value="Отправить">Отправить</button>
                     </form>
                 </section>
             </div>

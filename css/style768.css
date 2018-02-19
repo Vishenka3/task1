@@ -5,8 +5,7 @@
 body {
   font-family: 'Times New Roman', sans-serif;
   font-size: 1.3em;
-  color: #000000;
-  letter-spacing: 1px; }
+  color: #000000; }
   body h1 {
     font-weight: 900;
     font-family: 'MS Sans Serif', sans-serif; }
@@ -27,44 +26,54 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 auto; }
+  /*margin: 0 auto;*/ }
   #container h1:not(.exception) {
     padding: 15vh 0 5vh 0;
-    width: 70vw;
+    width: 90vw;
     margin: auto; }
   #container header {
     display: flex;
     color: #ffffff;
+    position: relative;
+    flex-direction: column;
     background: #dd3e18;
-    height: 90vh; }
+    height: 100%; }
     #container header #photo {
-      min-width: 35vw;
+      position: absolute;
+      border-radius: 50%;
+      top: 25%;
+      left: 35vw;
+      height: 30vw;
+      width: 30vw;
       background-image: url("../resources/photo2.jpg");
-      background-size: 71em;
+      background-size: 70vw;
       background-origin: content-box;
-      background-position: -492px;
+      background-position: -26vw 0;
       background-attachment: local; }
     #container header #info {
-      padding: 10% 7% 0 10%;
+      padding: 4% 7% 0 14%;
       flex-direction: column;
       line-height: 2.3em;
       display: flex; }
+      #container header #info #profession {
+        padding-left: 10vw; }
+      #container header #info #my_name {
+        padding-left: 12vw; }
       #container header #info section {
-        width: 50vw;
         font-family: 'Times New Roman', sans-serif;
         font-weight: 100;
-        padding-top: 15vw;
+        padding-top: 50%;
+        padding-bottom: 20%;
         line-height: 1.3em; }
   #container #expectations {
-    width: 70vw;
+    width: 90vw;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    /*justify-content: space-between;*/ }
+    flex-wrap: wrap; }
     #container #expectations .wide {
-      width: 60%; }
+      width: 55%; }
     #container #expectations .slim {
-      width: 30%; }
+      width: 35%; }
     #container #expectations div {
       display: flex;
       flex-direction: column;
@@ -80,67 +89,69 @@ body {
         font-size: 0.8em;
         word-wrap: break-word; }
       #container #expectations div:hover {
-        transform: scale(1.1); }
+        transform: scale(1.04); }
   #container #examples {
-    width: 70vw;
+    width: 90vw;
     margin: 0 auto; }
     #container #examples .example {
-      height: 50vh;
-      max-height: 50vh;
+      height: 83vh;
       padding-bottom: 20vh;
       display: flex;
+      flex-direction: column-reverse;
       justify-content: space-between; }
+      #container #examples .example .wrapper {
+        margin: 0 auto;
+        height: 55vh;
+        width: 90vw; }
       #container #examples .example .example_info {
         display: flex;
         flex-direction: column;
-        /*justify-content: space-between;*/
-        margin-left: 5vw;
-        font-size: 0.9em;
-        position: relative; }
+        flex-wrap: wrap;
+        font-size: 0.9em; }
+        #container #examples .example .example_info a {
+          margin-bottom: 10vh; }
         #container #examples .example .example_info p {
-          position: absolute;
-          bottom: 0;
-          vertical-align: bottom;
+          width: 40%;
+          margin-left: 10vw;
           font-size: 0.9em; }
-    #container #examples .reverse {
-      flex-direction: row-reverse; }
-      #container #examples .reverse .example_info {
-        margin-left: 0;
-        margin-right: 5vw; }
-      #container #examples .reverse .wrapper .controls {
-        width: 10px;
-        left: -40px; }
+    #container #examples .reverse .example_info {
+      margin-left: 0;
+      margin-right: 5vw; }
   #container footer {
     background: #e6f0ef; }
     #container footer h1 {
       padding-top: 10vh; }
     #container footer #contacts {
       display: flex;
-      width: 70vw;
+      flex-direction: column;
+      width: 90vw;
       margin: 0 auto;
       margin-bottom: 15vh; }
       #container footer #contacts #about {
         font-size: 0.8em;
-        width: 30%; }
+        display: flex;
+        margin-bottom: 10vh; }
+        #container footer #contacts #about #unnes {
+          display: none; }
         #container footer #contacts #about p {
           margin-bottom: 2vh; }
         #container footer #contacts #about #intro {
+          width: 60%;
           margin-bottom: 5vh; }
         #container footer #contacts #about ul {
           width: 25%; }
-        #container footer #contacts #about li {
-          list-style-type: none;
-          line-height: 1.5em; }
-          #container footer #contacts #about li a {
-            width: 20%;
-            margin-bottom: 1vh;
-            display: block; }
-            #container footer #contacts #about li a p {
-              margin: -2.8vh 0 0 3vw; }
-          #container footer #contacts #about li img {
-            padding-right: 5px; }
-      #container footer #contacts #communication {
-        width: 70%; }
+          #container footer #contacts #about ul li {
+            list-style-type: none;
+            line-height: 1.3em; }
+            #container footer #contacts #about ul li a {
+              margin-bottom: 1vh;
+              display: block; }
+              #container footer #contacts #about ul li a p {
+                margin: -3.4vh 0 0 3vw; }
+            #container footer #contacts #about ul li img {
+              padding-right: 5px; }
+      #container footer #contacts form {
+        width: 100%; }
   #container .fileform {
     background-color: #FFFFFF;
     border: 1px solid #CCCCCC;
@@ -185,4 +196,4 @@ body {
     height: 30px;
     z-index: 1; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style768.css.map */

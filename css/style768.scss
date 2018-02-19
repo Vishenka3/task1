@@ -6,7 +6,6 @@ body {
   font-family: 'Times New Roman', sans-serif;
   font-size: 1.3em;
   color: #000000;
-  letter-spacing: 1px;
   h1{
     font-weight: 900;
     font-family: 'MS Sans Serif', sans-serif;
@@ -23,54 +22,58 @@ body {
 #container {
   h1:not(.exception){
     padding: 15vh 0 5vh 0;
-    width: 70vw;
+    width: 90vw;
     margin: auto;
   }
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 
   header {
     display: flex;
     color: #ffffff;
-    background: #dd3e18;//#082740
-    height: 90vh;
+    position: relative;
+    flex-direction: column;
+    background: #dd3e18;
+    height: 100%;
     #photo{
-      min-width: 35vw;
+      position: absolute;
+      border-radius: 50%;
+      top: 25%;
+      left: 35vw;
+      height: 30vw;
+      width: 30vw;
       background-image: url("../resources/photo2.jpg");
-      background-size: 71em;
+      background-size: 70vw;
       background-origin: content-box;
-      background-position: -492px;
+      background-position: -26vw 0;
       background-attachment: local;
     }
     #info{
-      padding: 10% 7% 0 10%;
+      padding: 4% 7% 0 14%;
       flex-direction: column;
       line-height: 2.3em;
       display: flex;
+      #profession{  padding-left: 10vw;  }
+      #my_name{  padding-left: 12vw;  }
       section{
-        width: 50vw;
         font-family: 'Times New Roman', sans-serif;
         font-weight: 100;
-        padding-top: 15vw;
+        padding-top: 50%;
+        padding-bottom: 20%;
         line-height: 1.3em;
       }
     }
   }
 
   #expectations{
-    width: 70vw;
+    width: 90vw;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    /*justify-content: space-between;*/
-    .wide{
-      width: 60%;
-    }
-    .slim{
-      width: 30%;
-    }
+    .wide{  width: 55%;  }
+    .slim{  width: 35%;  }
     div{
       display: flex;
       flex-direction: column;
@@ -85,76 +88,85 @@ body {
         font-size: 0.8em;
         word-wrap: break-word;
       }
-      &:hover{  transform: scale(1.1);  }
+      &:hover{  transform: scale(1.04);  }
     }
   }
 
   #examples{
-    width: 70vw;
+    width: 90vw;
     margin: 0 auto;
     .example{
-      height: 50vh;
-      max-height: 50vh;
+      height: 83vh;
       padding-bottom: 20vh;
       display: flex;
+      flex-direction: column-reverse;
       justify-content: space-between;
+      .wrapper{
+        margin: 0 auto;
+        height: 55vh;
+        width: 90vw;
+      }
       .example_info{
         display: flex;
         flex-direction: column;
-        /*justify-content: space-between;*/
-        margin-left: 5vw;
+        flex-wrap: wrap;
         font-size: 0.9em;
-        position: relative;
+        a{
+          margin-bottom: 10vh;
+        }
         p{
-          position: absolute;
-          bottom: 0;
-          vertical-align: bottom;
+          width: 40%;
+          margin-left: 10vw;
           font-size: 0.9em;
         }
       }
     }
     .reverse{
-      flex-direction: row-reverse;
       .example_info{
         margin-left: 0;
         margin-right: 5vw;
-      }
-      .wrapper .controls {
-        width: 10px;
-        left: -40px;
       }
     }
   }
 
   footer {
     background: #e6f0ef;
-    h1{
-      padding-top: 10vh;
-    }
+    h1{  padding-top: 10vh;  }
     #contacts{
       display: flex;
-      width: 70vw;
+      flex-direction: column;
+      width: 90vw;
       margin: 0 auto;
       margin-bottom: 15vh;
       #about {
         font-size: 0.8em;
-        width: 30%;
+        display: flex;
+        margin-bottom: 10vh;
+        #unnes{
+          display: none;
+        }
         p{  margin-bottom: 2vh;  }
-        #intro{  margin-bottom: 5vh;  }
-        ul{width: 25%;}
-        li {
-          list-style-type: none;
-          line-height: 1.5em;
-          a {
-            width: 20%;
-            margin-bottom: 1vh;
-            display: block;
-            p{  margin: -2.8vh 0 0 3vw;  }
+        #intro{
+          width: 60%;
+          margin-bottom: 5vh;
+        }
+        ul{
+          width: 25%;
+          li {
+            list-style-type: none;
+            line-height: 1.3em;
+            a {
+              margin-bottom: 1vh;
+              display: block;
+              p{  margin: -3.4vh 0 0 3vw;  }
+            }
+            img {  padding-right: 5px;  }
           }
-          img {  padding-right: 5px;  }
         }
       }
-      #communication{  width: 70%;  }
+      form{
+        width: 100%;
+      }
     }
   }
 

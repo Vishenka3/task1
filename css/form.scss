@@ -1,0 +1,87 @@
+form{
+  width: 50vw;
+  > div {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 2vh;
+    margin-bottom: 2vh;
+  }
+  input:not([type="file"]), textarea {
+    width: 98%;
+    border-radius: 0.8vh;
+    border: none;
+    background: rgba(255, 255, 255, 0.62);
+    z-index: 1;
+    outline: 0;
+    &:valid {
+      background: #FFFFFF;
+    }
+    &:focus:not([type="file"]) + label {
+      background: #dd3e18;;
+      color: white;
+      font-weight: 800;
+      font-size: 70%;
+      padding: 1px 6px;
+      z-index: 0;
+      text-transform: uppercase;
+    }
+  }
+  label {
+    border-radius: 0 0 1vh 1vh;
+    height: 15px;
+    padding: 1.2vh 0 2vh 2vw;
+    transition:
+            background 0.2s,
+            color 0.2s,
+            top 0.2s,
+            bottom 0.2s,
+            right 0.2s,
+            left 0.2s;
+    position: absolute;
+    color: #909090;
+  }
+  textarea {
+    display: block;
+    resize: none;
+  }
+  button{
+    width: 100%;
+    height: 39px;
+    border: none;
+    border-radius: 1vh;
+    background-color: #dd3e18;
+    color: #FFFFFF;
+    outline: 0;
+    font-size: 0.8em;
+    &:hover{
+      background-color: #942c18;
+    }
+    &:active{
+      margin: 0 auto;
+      background-color: #f54218;
+    }
+  }
+}
+
+form.go-bottom{
+  input, textarea {
+    padding: 12px 0 12px 12px;
+  }
+  label {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 98%;
+  }
+  input:focus, textarea:focus {
+    padding: 15px 6px 10px 6px;
+  }
+  input:not(.checkbox):not(.radio):focus + label, textarea:focus + label {
+    top: 100%;
+    margin-top: -22px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  
+}
