@@ -118,11 +118,15 @@ body {
           margin-bottom: 10vh;
         }
         p{
-          width: 40%;
-          margin-left: 10vw;
+          width: 50%;
+          margin-left: 5vw;
           font-size: 0.9em;
         }
       }
+    }
+    label{
+      width: 14px;
+      height: 14px;
     }
     .reverse{
       .example_info{
@@ -155,6 +159,7 @@ body {
           margin-bottom: 5vh;
         }
         ul{
+          margin-left: 5vw;
           width: 25%;
           li {
             list-style-type: none;

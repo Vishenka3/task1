@@ -4,7 +4,7 @@
 }
 body {
   font-family: 'Times New Roman', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: #000000;
   letter-spacing: 1px;
   h1{
@@ -52,6 +52,7 @@ body {
       section{
         width: 50vw;
         font-family: 'Times New Roman', sans-serif;
+        font-size: 1.6em;
         font-weight: 100;
         padding-top: 15vw;
         line-height: 1.3em;
@@ -140,6 +141,7 @@ body {
       #about {
         font-size: 0.8em;
         width: 30%;
+        margin-right: 5vw;
         p{  margin-bottom: 2vh;  }
         #intro{  margin-bottom: 5vh;  }
         ul{width: 25%;}
@@ -153,7 +155,7 @@ body {
           img {  padding-right: 5px;  }
         }
       }
-      #communication{  width: 70%;  }
+      #communication{  width: 65%;  }
     }
   }
 

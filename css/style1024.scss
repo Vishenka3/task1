@@ -66,14 +66,14 @@ body {
   }
 
   #expectations{
-    width: 90vw;
+    width: 85vw;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     .controlsDiv, .radioDiv{
       display: none;
     }
-    .wide{  width: 60%;  }
+    .wide{  width: 55%;  }
     .slim{  width: 35%;  }
     div{
       display: flex;
@@ -81,7 +81,7 @@ body {
       justify-content: space-between;
       background-color: #e7f0ee;
       border-radius: 0.8vh;
-      margin: 10px;
+      margin: 0 30px 30px 10px;
       transition: all 0.2s ease-in-out;
       h2{  padding: 20px;  }
       p{
@@ -98,14 +98,14 @@ body {
     margin: 0 auto;
     .example{
       height: 43vh;
-      max-height: 50vh;
+      max-height: 60vh;
       padding-bottom: 20vh;
       display: flex;
       justify-content: space-between;
       .example_info{
+        width: 30vw;
         display: flex;
         flex-direction: column;
-        margin-left: 5vw;
         font-size: 0.9em;
         position: relative;
         p{

@@ -95,7 +95,7 @@ body {
     width: 90vw;
     margin: 0 auto;
     .example{
-      height: 43vh;
+      height: 25vh;
       max-height: 50vh;
       padding-bottom: 20vh;
       display: flex;
@@ -113,6 +113,10 @@ body {
           font-size: 0.9em;
         }
       }
+    }
+    label{
+      width: 15px;
+      height: 15px;
     }
     .reverse{
       flex-direction: row-reverse;
