@@ -9,6 +9,8 @@
     <link rel="stylesheet" media="all and (min-width: 1440px)" href="css/style.css"/>
     <link rel="stylesheet" media="screen and (min-width: 1024px) and (max-width: 1439px)" href="css/style1024.css"/>
     <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1023px)" href="css/style768.css"/>
+    <link rel="stylesheet" media="screen and (orientation: portrait) and (min-width: 1024px)" href="css/styleIPadPro.css"/>
+    <link rel="stylesheet" media="screen and (orientation: portrait) and (min-width: 320px) and (max-width: 767px)" href="css/stylePhones.css"/>
     <title>Profile</title>
 </head>
 <body>
@@ -30,19 +32,29 @@
         <h1>Ожидания от ШРИ</h1>
 
         <section id="expectations">
-            <div class="wide">
+            <div class="controlsDiv">
+                <label for="slide10"></label>
+                <label for="slide11"></label>
+                <label for="slide12"></label>
+                <label for="slide13"></label>
+            </div>
+            <input  class="radioDiv" type="radio" name="point4" id="slide10" checked>
+            <input  class="radioDiv" type="radio" name="point4" id="slide11">
+            <input  class="radioDiv" type="radio" name="point4" id="slide12">
+            <input  class="radioDiv" type="radio" name="point4" id="slide13">
+            <div class="wide exp" id="exp1">
                 <h2>Свобода</h2>
                 <p>ТекстТекст ТекстТекстТекстТекст. ТекстТекстТекстТекст Текст. ТекстТекстТекстТекст. ТекстТекстТекстТекст ТекстТекст.</p>
             </div>
-            <div class="slim">
-                <h2>Свобода</h2>
+            <div class="slim exp" id="exp2">
+                <h2>Равенство</h2>
                 <p>ТекстТекст ТекстТекстТекстТекст. ТекстТекстТекстТекстТекст. ТекстТекстТекстТекст. ТекстТекстТекстТекстТекстТекст.</p>
             </div>
-            <div class="slim">
-                <h2>Свобода</h2>
+            <div class="slim exp" id="exp3">
+                <h2>Упячка</h2>
                 <p>ТекстТекст ТекстТекстТекстТекст. ТекстТекстТекстТекст Текст. ТекстТекстТекстТекст. ТекстТекстТекстТекст ТекстТекст.</p>
             </div>
-            <div class="wide">
+            <div class="wide exp" id="exp4">
                 <h2>Свобода</h2>
                 <p>ТекстТекст ТекстТекстТекстТекст. ТекстТекстТекстТекст Текст. ТекстТекстТекстТекст. ТекстТекстТекстТекст ТекстТекст.</p>
             </div>

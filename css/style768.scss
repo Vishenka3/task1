@@ -72,6 +72,9 @@ body {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    .controlsDiv, .radioDiv{
+      display: none;
+    }
     .wide{  width: 55%;  }
     .slim{  width: 35%;  }
     div{

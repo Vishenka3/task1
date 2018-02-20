@@ -70,6 +70,8 @@ body {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap; }
+    #container #expectations .controlsDiv, #container #expectations .radioDiv {
+      display: none; }
     #container #expectations .wide {
       width: 55%; }
     #container #expectations .slim {

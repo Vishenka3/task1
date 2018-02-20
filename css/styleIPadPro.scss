@@ -11,8 +11,12 @@ body {
     font-weight: 900;
     font-family: 'MS Sans Serif', sans-serif;
   }
-  h2{  font-family: 'MS Sans Serif', sans-serif;  }
-  h3{  font-family: 'MS Sans Serif', sans-serif;  }
+  h2{
+    font-family: 'MS Sans Serif', sans-serif;
+  }
+  h3{
+    font-family: 'MS Sans Serif', sans-serif;
+  }
   a{
     text-decoration: none;
     &:link{  color: #dd3e18;  }
@@ -23,7 +27,7 @@ body {
 #container {
   h1:not(.exception){
     padding: 15vh 0 5vh 0;
-    width: 70vw;
+    width: 90vw;
     margin: auto;
   }
   display: flex;
@@ -35,22 +39,22 @@ body {
     display: flex;
     color: #ffffff;
     background: #dd3e18;//#082740
-    height: 90vh;
+    height: 50vh;
     #photo{
       min-width: 35vw;
       background-image: url("../resources/photo2.jpg");
-      background-size: 71em;
+      background-size: cover;
       background-origin: content-box;
-      background-position: -492px;
+      background-position: -400px;
       background-attachment: local;
     }
     #info{
-      padding: 10% 7% 0 10%;
+      padding: 4% 7% 0 10%;
       flex-direction: column;
       line-height: 2.3em;
       display: flex;
       section{
-        width: 50vw;
+        width: 45vw;
         font-family: 'Times New Roman', sans-serif;
         font-weight: 100;
         padding-top: 15vw;
@@ -60,19 +64,15 @@ body {
   }
 
   #expectations{
-    width: 70vw;
+    width: 90vw;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     .controlsDiv, .radioDiv{
       display: none;
     }
-    .wide{
-      width: 60%;
-    }
-    .slim{
-      width: 35%;
-    }
+    .wide{  width: 60%;  }
+    .slim{  width: 35%;  }
     div{
       display: flex;
       flex-direction: column;
@@ -87,15 +87,15 @@ body {
         font-size: 0.8em;
         word-wrap: break-word;
       }
-      &:hover{  transform: scale(1.1);  }
+      &:hover{  transform: scale(1.05);  }
     }
   }
 
   #examples{
-    width: 70vw;
+    width: 90vw;
     margin: 0 auto;
     .example{
-      height: 42vh;
+      height: 43vh;
       max-height: 50vh;
       padding-bottom: 20vh;
       display: flex;
@@ -120,34 +120,38 @@ body {
         margin-left: 0;
         margin-right: 5vw;
       }
-      .wrapper .controls {
-        width: 10px;
-        left: -40px;
+      .wrapper {
+        width: 55vw;
+        .controls {
+          width: 130px;
+          left: 40%;
+        }
       }
+    }
+    .wrapper {
+      width: 55vw;
     }
   }
 
   footer {
     background: #e6f0ef;
-    h1{
-      padding-top: 10vh;
-    }
+    h1{  padding-top: 10vh;  }
     #contacts{
       display: flex;
-      width: 70vw;
+      width: 90vw;
       margin: 0 auto;
       margin-bottom: 15vh;
       #about {
         font-size: 0.8em;
-        width: 30%;
+        padding-right: 20px;
+        width: 40%;
         p{  margin-bottom: 2vh;  }
         #intro{  margin-bottom: 5vh;  }
         ul{width: 25%;}
         li {
           list-style-type: none;
-          line-height: 1.5em;
+          line-height: 1.3em;
           a {
-            width: 20%;
             display: inline-flex;
           }
           img {  padding-right: 5px;  }

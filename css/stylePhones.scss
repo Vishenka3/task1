@@ -4,15 +4,14 @@
 }
 body {
   font-family: 'Times New Roman', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.1em;
   color: #000000;
-  letter-spacing: 1px;
   h1{
     font-weight: 900;
     font-family: 'MS Sans Serif', sans-serif;
   }
   h2{  font-family: 'MS Sans Serif', sans-serif;  }
-  h3{  font-family: 'MS Sans Serif', sans-serif;  }
+  h3{  padding-top: 6vh;font-family: 'MS Sans Serif', sans-serif;  }
   a{
     text-decoration: none;
     &:link{  color: #dd3e18;  }
@@ -23,57 +22,90 @@ body {
 #container {
   h1:not(.exception){
     padding: 15vh 0 5vh 0;
-    width: 70vw;
+    width: 90vw;
     margin: auto;
   }
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 auto;
-
   header {
     display: flex;
     color: #ffffff;
-    background: #dd3e18;//#082740
-    height: 90vh;
+    position: relative;
+    flex-direction: column;
+    background: #dd3e18;
+    height: 100%;
     #photo{
-      min-width: 35vw;
+      position: absolute;
+      border-radius: 50%;
+      top: 30%;
+      left: 30vw;
+      height: 40vw;
+      width: 40vw;
       background-image: url("../resources/photo2.jpg");
-      background-size: 71em;
+      background-size: 70vw;
       background-origin: content-box;
-      background-position: -492px;
+      background-position: -23vw 0;
       background-attachment: local;
     }
     #info{
-      padding: 10% 7% 0 10%;
+      padding: 0 10% 0 10%;
       flex-direction: column;
-      line-height: 2.3em;
       display: flex;
+      #profession{  font-size: 1em ;margin: 3vh auto }
+      #my_name{  padding-left: 20vw;  }
       section{
-        width: 50vw;
         font-family: 'Times New Roman', sans-serif;
         font-weight: 100;
-        padding-top: 15vw;
+        padding-top: 60%;
+        padding-bottom: 20%;
         line-height: 1.3em;
       }
     }
   }
 
   #expectations{
-    width: 70vw;
+    width: 90vw;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    .controlsDiv, .radioDiv{
+    flex-direction: column-reverse;
+
+    #exp1,#exp2, #exp3, #exp4{
+      transition: all 0.2s ease-in-out;
       display: none;
     }
-    .wide{
-      width: 60%;
+    #slide10:checked ~ #exp1{display:block;transform: scale(1.1);};
+    #slide11:checked ~ #exp2{display:block;z-index: 4};
+    #slide12:checked ~ #exp3{display:block;z-index: 4};
+    #slide13:checked ~ #exp4{display:block;z-index: 4};
+
+    .controlsDiv{
+      flex-direction: row;
+      display: flex;
+      margin: 0 auto;
+      label{
+        background-color: #dd3e18;
+        cursor: pointer;
+        display: inline-block;
+        height: 14px;
+        margin: 25px 12px 0 16px;
+        position: relative;
+        width: 14px;
+        border-radius: 50%;
+        transition: background ease-in-out .5s;
+        &:hover,
+        #slide10:checked ~ .controlsDiv label:nth-of-type(1),
+        #slide11:checked ~ .controlsDiv label:nth-of-type(2),
+        #slide12:checked ~ .controlsDiv label:nth-of-type(3),
+        #slide13:checked ~ .controlsDiv label:nth-of-type(4){
+          background-color: #000000;
+        }
+      }
     }
-    .slim{
-      width: 35%;
+    .radioDiv{
+      display: none;
     }
-    div{
+    .exp{
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -87,73 +119,90 @@ body {
         font-size: 0.8em;
         word-wrap: break-word;
       }
-      &:hover{  transform: scale(1.1);  }
+      &:hover{  transform: scale(1.04);  }
     }
   }
 
   #examples{
-    width: 70vw;
+    width: 90vw;
     margin: 0 auto;
     .example{
-      height: 42vh;
-      max-height: 50vh;
+      height: 83vh;
       padding-bottom: 20vh;
       display: flex;
+      flex-direction: column-reverse;
       justify-content: space-between;
+      .wrapper{
+        margin: 0 auto;
+        height: 55vh;
+        width: 90vw;
+      }
       .example_info{
         display: flex;
         flex-direction: column;
-        margin-left: 5vw;
         font-size: 0.9em;
-        position: relative;
+        a{
+          margin-bottom: 2vh;
+        }
         p{
-          position: absolute;
-          bottom: 0;
-          vertical-align: bottom;
           font-size: 0.9em;
         }
       }
     }
+    label{
+      width: 14px;
+      height: 14px;
+    }
     .reverse{
-      flex-direction: row-reverse;
       .example_info{
         margin-left: 0;
         margin-right: 5vw;
       }
-      .wrapper .controls {
-        width: 10px;
-        left: -40px;
-      }
+    }
+    .controls
+    {
+      top:100%;
+      left: 30%;
     }
   }
 
   footer {
     background: #e6f0ef;
-    h1{
-      padding-top: 10vh;
-    }
+    h1{  padding-top: 10vh;  }
     #contacts{
       display: flex;
-      width: 70vw;
+      flex-direction: column;
+      width: 90vw;
       margin: 0 auto;
       margin-bottom: 15vh;
       #about {
         font-size: 0.8em;
-        width: 30%;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-right: 20px;
+        margin-bottom: 10vh;
+        #unnes{
+          display: none;
+        }
         p{  margin-bottom: 2vh;  }
-        #intro{  margin-bottom: 5vh;  }
-        ul{width: 25%;}
-        li {
-          list-style-type: none;
-          line-height: 1.5em;
-          a {
-            width: 20%;
-            display: inline-flex;
+        #intro{
+          margin-top: 5vh;
+        }
+        ul{
+          width: 25%;
+          li {
+            list-style-type: none;
+            line-height: 1.3em;
+            a {
+              display: inline-flex;
+            }
+            img {  padding-right: 5px;  }
           }
-          img {  padding-right: 5px;  }
         }
       }
-      #communication{  width: 70%;  }
+      form{
+        width: 100%;
+      }
     }
   }
 
