@@ -40,27 +40,27 @@ body {
     #photo{
       position: absolute;
       border-radius: 50%;
-      top: 25%;
-      left: 35vw;
-      height: 30vw;
-      width: 30vw;
+      top: 22%;
+      left: 32vw;
+      height: 35vw;
+      width: 35vw;
       background-image: url("../resources/photo2.jpg");
       background-size: 70vw;
       background-origin: content-box;
-      background-position: -26vw 0;
+      background-position: -23vw 0;
       background-attachment: local;
     }
     #info{
-      padding: 4% 7% 0 14%;
+      padding: 4% 14% 0 14%;
       flex-direction: column;
       line-height: 2.3em;
       display: flex;
-      #profession{  padding-left: 10vw;  }
-      #my_name{  padding-left: 12vw;  }
+      #profession{  padding-left: 11vw;  }
+      #my_name{  padding-left: 13vw;  }
       section{
         font-family: 'Times New Roman', sans-serif;
         font-weight: 100;
-        padding-top: 50%;
+        padding-top: 60%;
         padding-bottom: 20%;
         line-height: 1.3em;
       }
@@ -96,7 +96,7 @@ body {
     width: 90vw;
     margin: 0 auto;
     .example{
-      height: 83vh;
+      height: 73vh;
       padding-bottom: 20vh;
       display: flex;
       flex-direction: column-reverse;
@@ -141,6 +141,7 @@ body {
       #about {
         font-size: 0.8em;
         display: flex;
+        padding-right: 20px;
         margin-bottom: 10vh;
         #unnes{
           display: none;
@@ -156,9 +157,7 @@ body {
             list-style-type: none;
             line-height: 1.3em;
             a {
-              margin-bottom: 1vh;
-              display: block;
-              p{  margin: -3.4vh 0 0 3vw;  }
+              display: inline-flex;
             }
             img {  padding-right: 5px;  }
           }

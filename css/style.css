@@ -59,12 +59,11 @@ body {
     width: 70vw;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    /*justify-content: space-between;*/ }
+    flex-wrap: wrap; }
     #container #expectations .wide {
       width: 60%; }
     #container #expectations .slim {
-      width: 30%; }
+      width: 35%; }
     #container #expectations div {
       display: flex;
       flex-direction: column;
@@ -85,7 +84,7 @@ body {
     width: 70vw;
     margin: 0 auto; }
     #container #examples .example {
-      height: 50vh;
+      height: 42vh;
       max-height: 50vh;
       padding-bottom: 20vh;
       display: flex;
@@ -93,7 +92,6 @@ body {
       #container #examples .example .example_info {
         display: flex;
         flex-direction: column;
-        /*justify-content: space-between;*/
         margin-left: 5vw;
         font-size: 0.9em;
         position: relative; }
@@ -133,10 +131,7 @@ body {
           line-height: 1.5em; }
           #container footer #contacts #about li a {
             width: 20%;
-            margin-bottom: 1vh;
-            display: block; }
-            #container footer #contacts #about li a p {
-              margin: -2.8vh 0 0 3vw; }
+            display: inline-flex; }
           #container footer #contacts #about li img {
             padding-right: 5px; }
       #container footer #contacts #communication {

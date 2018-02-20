@@ -121,6 +121,7 @@ body {
       margin-bottom: 15vh; }
       #container footer #contacts #about {
         font-size: 0.8em;
+        padding-right: 20px;
         width: 40%; }
         #container footer #contacts #about p {
           margin-bottom: 2vh; }
@@ -132,10 +133,7 @@ body {
           list-style-type: none;
           line-height: 1.3em; }
           #container footer #contacts #about li a {
-            margin-bottom: 1vh;
-            display: block; }
-            #container footer #contacts #about li a p {
-              margin: -3.4vh 0 0 3vw; }
+            display: inline-flex; }
           #container footer #contacts #about li img {
             padding-right: 5px; }
       #container footer #contacts #communication {

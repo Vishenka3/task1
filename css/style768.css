@@ -41,28 +41,28 @@ body {
     #container header #photo {
       position: absolute;
       border-radius: 50%;
-      top: 25%;
-      left: 35vw;
-      height: 30vw;
-      width: 30vw;
+      top: 22%;
+      left: 32vw;
+      height: 35vw;
+      width: 35vw;
       background-image: url("../resources/photo2.jpg");
       background-size: 70vw;
       background-origin: content-box;
-      background-position: -26vw 0;
+      background-position: -23vw 0;
       background-attachment: local; }
     #container header #info {
-      padding: 4% 7% 0 14%;
+      padding: 4% 14% 0 14%;
       flex-direction: column;
       line-height: 2.3em;
       display: flex; }
       #container header #info #profession {
-        padding-left: 10vw; }
+        padding-left: 11vw; }
       #container header #info #my_name {
-        padding-left: 12vw; }
+        padding-left: 13vw; }
       #container header #info section {
         font-family: 'Times New Roman', sans-serif;
         font-weight: 100;
-        padding-top: 50%;
+        padding-top: 60%;
         padding-bottom: 20%;
         line-height: 1.3em; }
   #container #expectations {
@@ -94,7 +94,7 @@ body {
     width: 90vw;
     margin: 0 auto; }
     #container #examples .example {
-      height: 83vh;
+      height: 73vh;
       padding-bottom: 20vh;
       display: flex;
       flex-direction: column-reverse;
@@ -130,6 +130,7 @@ body {
       #container footer #contacts #about {
         font-size: 0.8em;
         display: flex;
+        padding-right: 20px;
         margin-bottom: 10vh; }
         #container footer #contacts #about #unnes {
           display: none; }
@@ -144,10 +145,7 @@ body {
             list-style-type: none;
             line-height: 1.3em; }
             #container footer #contacts #about ul li a {
-              margin-bottom: 1vh;
-              display: block; }
-              #container footer #contacts #about ul li a p {
-                margin: -3.4vh 0 0 3vw; }
+              display: inline-flex; }
             #container footer #contacts #about ul li img {
               padding-right: 5px; }
       #container footer #contacts form {

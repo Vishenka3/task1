@@ -64,12 +64,11 @@ body {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    /*justify-content: space-between;*/
     .wide{
       width: 60%;
     }
     .slim{
-      width: 30%;
+      width: 35%;
     }
     div{
       display: flex;
@@ -93,7 +92,7 @@ body {
     width: 70vw;
     margin: 0 auto;
     .example{
-      height: 50vh;
+      height: 42vh;
       max-height: 50vh;
       padding-bottom: 20vh;
       display: flex;
@@ -101,7 +100,6 @@ body {
       .example_info{
         display: flex;
         flex-direction: column;
-        /*justify-content: space-between;*/
         margin-left: 5vw;
         font-size: 0.9em;
         position: relative;
@@ -147,9 +145,7 @@ body {
           line-height: 1.5em;
           a {
             width: 20%;
-            margin-bottom: 1vh;
-            display: block;
-            p{  margin: -2.8vh 0 0 3vw;  }
+            display: inline-flex;
           }
           img {  padding-right: 5px;  }
         }

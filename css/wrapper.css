@@ -107,7 +107,9 @@
         left: 35%;
         position: absolute;
     }
-    .wrapper .controls .reverse {
-
+}
+@media screen and (min-width: 1440px){
+    .wrapper .controls {
+        top: 35%;
     }
 }
